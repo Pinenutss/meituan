@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/AllCss.css"/>
+    <link rel="stylesheet" href="../css/weui.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/weui.min.js"></script>
+</head>
+<body>
+    <div class="dingdan">
+        <div class="dingdan-nav flex-father">
+            <span class="dingdan-zhuangtai">订单状态</span>
+            <span class="dingdan-xiangqing active">订单详情</span>
+        </div>
+        <!--订单状态-->
+        <div class="zhuangtai" style="display: none">
+             <div class="weijiedan"><i class="icon icon-mei"></i>未接单</div>
+             <div class="yijiedan"><i class="icon icon-you"></i>已接单</div>
+             <div class="peisong active"><i class="icon icon-pei2"></i>正在配送</div>
+             <div class="wancheng"><i class="icon icon-wan"></i>已完成</div>
+        </div>
+        <!--订单详情-->
+        <div class="xiangqing">
+             <p class="mingzi border-all-bottom">订单号：<span>我是订单我是订单我是订单</span></p>
+            <!--顾客名字-->
+             <div class="shangjia-mingzi border-bottom">
+                 <i class="icon icon-dian"></i>
+                 <p>我是名字我是名字我是名字</p>
+                 <span>02-16 12:00:00</span>
+             </div>
+            <!--商店地址-->
+             <div class="dianpu flex-father border-all-bottom">
+                  <div class="flex-sun dizhi">店铺地址：</div>
+                  <div>我是地址我是地址我是地址我是地址</div>
+             </div>
+             <p class="mingzi border-all-bottom">顾客信息</p>
+            <!--顾客信息-->
+             <div class="guke-mingzi border-all-bottom">
+                 <p class="border-all-bottom">顾客姓名：<span>名侦探小五郎</span></p>
+                 <div class="dianhua border-all-bottom flex-father">
+                     <p>顾客电话：<span class="dianhua-num">13511111111</span></p>
+                     <span class="flex-sun dianhua-sp"><i class="icon icon-dianhua"></i><span class="bohao">一键拨号</span></span>
+                 </div>
+                 <p>顾客地址：<span>名侦探小五郎</span></p>
+             </div>
+            <p class="mingzi border-all-bottom">订单情况</p>
+            <!--订单情况-->
+            <div class="qingkuang">
+                <p class="flex-father border-bottom">
+                    <span class="qingkuang-mingzi">鸡腿汉堡</span>
+                    <span class="qingkuang-num">X3</span>
+                    <span class="qingkuang-qian">$36.00</span>
+                </p>
+                <p class="flex-father border-bottom">
+                    <span class="qingkuang-mingzi">鸡腿汉堡<span class="guige">规格详情</span></span>
+                    <span class="qingkuang-num">X3</span>
+                    <span class="qingkuang-qian">$36.00</span>
+                </p>
+                <p class="clearfix">
+                    <span class="qingkuang-peisong">配送费</span>
+                    <span class="qingkuang-juli"><span class="juli">配送距离<span>2.3km</span></span>$36.00</span>
+                </p>
+            </div>
+            <div class="beizhu">
+                <p>备注</p>
+                <p>我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注</p>
+            </div>
+            <p class="mingzi">费用情况</p>
+            <!--费用情况-->
+            <div class="feiyong clearfix">
+                <div class="clearfix feiyong-p border-bottom">
+                    <span class="feiyong-1">消费税</span>
+                    <span class="feiyong-2">$2.00</span>
+                </div>
+                <div class="clearfix feiyong-p border-bottom">
+                    <span class="feiyong-1">交易手续费</span>
+                    <span class="feiyong-2">$2.00</span>
+                </div>
+                <div class="clearfix feiyong-p border-bottom">
+                    <span class="feiyong-1">打赏金额</span>
+                    <span class="feiyong-2">$2.00</span>
+                </div>
+                <div class="clearfix feiyong-p">
+                    <span class="feiyong-1">优惠卷</span>
+                    <span class="feiyong-2">$2.00</span>
+                </div>
+            </div>
+            <div class="zhifu clearfix"><span class="zhifu-1">支付方式</span><span class="zhifu-2">银联支付</span></div>
+            <div class="zhifu clearfix"><span class="zhifu-1">客户支付金额</span><span class="zhifu-3">$30.00</span></div>
+            <div class="zhifu clearfix"><span class="zhifu-1">应付给店家的钱</span><span class="zhifu-3">$30.00</span></div>
+        </div>
+    </div>
+    <!--订单弹窗-->
+    <div class="dingdan-mask">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">确认状态改为<span class="active">已完成</span>？</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">主操作</a>
+            </div>
+        </div>
+    </div>
+    <!--详情弹窗-->
+    <div class="xiangqing-mask">
+        <div class="weui-mask"></div>
+        <div class="xq-mask">
+            <div class="xq-title">规格详情<i class="icon icon-cha"></i></div>
+            <div class="xq-leixing">
+                <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
+                <div class="flex-father">
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                </div>
+            </div>
+            <div class="xq-leixing">
+                <p class="xq-choose">请选择汤底 <span>(多选)</span>：</p>
+                <div class="flex-father">
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".icon-cha").on("click",function(){
+        $(".xiangqing-mask").hide();
+    })
+    $(".dingdan-zhuangtai").on("click",function(){
+        $(this).addClass("active")
+        $(".dingdan-xiangqing").removeClass("active");
+        $(".zhuangtai").show();
+        $(".xiangqing").hide();
+    })
+    $(".dingdan-xiangqing").on("click",function(){
+        $(this).addClass("active")
+        $(".dingdan-zhuangtai").removeClass("active");
+        $(".zhuangtai").hide();
+        $(".xiangqing").show();
+    })
+</script>
+</html>

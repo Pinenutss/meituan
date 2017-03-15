@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>订单结算</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/AllCss.css"/>
+    <link rel="stylesheet" href="../css/weui.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/weui.min.js"></script>
+</head>
+<body>
+<div class="dingdan settlement">
+    <!--订单详情-->
+    <div class="xiangqing sh-dz" style="margin-bottom: 40px;">
+        <!--收货地址-->
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>还没有收货地址，请点击设置</p> <!--没收货地址-->
+                <div class="sh-nr"> <!--有收货地址-->
+                    <p class="sh-p1"><span class="sh-mz">高田大哥</span><span class="sh-dh">135XXXXXXXX</span></p>
+                    <p class="sh-p2">我是地址我是地址我是地址我是地址我是地址我是地址我是地址我是地址</p>
+                </div>
+            </div>
+            <div class="weui-cell__ft">
+            </div>
+        </a>
+        <!--费用情况-->
+        <div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>消费税<i class="icon icon-wenti"></i></p>
+                </div>
+                <div class="weui-cell__ft feiyong-2">$2.00</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>交易手续税<i class="icon icon-wenti"></i></p>
+                </div>
+                <div class="weui-cell__ft feiyong-2">$2.00</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>打赏金额</p>
+                </div>
+                <div class="weui-cell__ft"><span class="feiyong-2">15%</span>,<span class="feiyong-2">$2.00</span></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>支付方式</p>
+                </div>
+                <div class="weui-cell__ft">请选择</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>优惠卷</p>
+                </div>
+                <div class="weui-cell__ft feiyong-2">配送费7折</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>送达时间</p>
+                </div>
+                <div class="weui-cell__ft">请选择期望送达时间</div>
+            </a>
+        </div>
+        <!--订单情况-->
+        <div class="qingkuang" style="margin-top:10px;">
+            <p class="flex-father border-bottom" style="line-height: 50px;"><i class="icon-dian"></i>我是名字我是名字我是名字</p>
+            <p class="flex-father border-bottom">
+                <span class="qingkuang-mingzi">鸡腿汉堡</span>
+                <span class="qingkuang-num">X3</span>
+                <span class="qingkuang-qian">$36.00</span>
+            </p>
+            <p class="flex-father border-bottom">
+                <span class="qingkuang-mingzi">鸡腿汉堡</span>
+                <span class="qingkuang-num">X3</span>
+                <span class="qingkuang-qian">$36.00</span>
+            </p>
+            <p class="clearfix">
+                <span class="qingkuang-peisong">配送费</span>
+                <span class="qingkuang-juli"><span class="juli">配送距离<span>2.3km</span></span>$36.00</span>
+            </p>
+        </div>
+        <!--备注-->
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>备注</p>
+            </div>
+            <div class="weui-cell__ft">口味、偏好等要求</div>
+        </a>
+    </div>
+    <!--提交订单-->
+    <div class="sent-order">
+        <p>应付<span>$20</span></p>
+        <button disabled="">提交订单</button>
+    </div>
+    <!--各类弹窗-->
+    <div class="mask">
+        <!--选择打赏金额-->
+        <div class="dashang-mask" style="display: none">
+            <p class="dashang-p border-all-bottom">请选择打赏金额</p>
+            <div class="dashang-list">
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-1">打赏<span>$20.00</span></span>
+                    <span class="dashang-2">微信支付</span>
+                    <span class="dashang-3 active"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-1">打赏<span>$20.00</span></span>
+                    <span class="dashang-2">总金额+配送费的10%</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-1">打赏<span>$20.00</span></span>
+                    <span class="dashang-2">总金额+配送费的10%</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--选择支付方式-->
+        <div class="dashang-mask" style="display: none">
+            <p class="dashang-p border-all-bottom">请选择支付方式</p>
+            <div class="dashang-list">
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-5"><i class="icon icon-weixin"></i></span>
+                    <span class="dashang-4">微信支付</span>
+                    <span class="dashang-3 active"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-5"><i class="icon icon-yinlian"></i></span>
+                    <span class="dashang-4">Visa/Master Card</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-5"><i class="icon icon-yinlian"></i></span>
+                    <span class="dashang-4">Debit在线支付</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="dashang-all border-all-bottom">
+                    <span class="dashang-5"><i class="icon icon-huodao"></i></span>
+                    <span class="dashang-4">货到付款</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--选择优惠卷-->
+        <div class="dashang-mask" style="display: none">
+            <p class="dashang-p border-all-bottom">选择优惠卷</p>
+            <div class="youhui-list">
+                <div class="youhui-all border-all-bottom">
+                    <span class="youhui-1">配送费7折</span>
+                    <span class="dashang-3 active"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="youhui-all border-all-bottom">
+                    <span class="youhui-1">不用优惠卷</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--选择时间段-->
+        <div class="dashang-mask" style="display: none">
+            <p class="dashang-p border-all-bottom">选择时间段</p>
+            <div class="youhui-list">
+                <div class="youhui-all border-all-bottom">
+                    <span class="youhui-1">12:00-12:30</span>
+                    <span class="dashang-3 active"><i class="icon icon-set"></i></span>
+                </div>
+                <div class="youhui-all border-all-bottom">
+                    <span class="youhui-1">12:30-13:00</span>
+                    <span class="dashang-3"><i class="icon icon-set"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--备注-->
+        <div class="dashang-mask set-beizhu">
+            <p class="dashang-p border-all-bottom">选择优惠卷<button class="wancheng">完成</button></p>
+            <div class="set-beizhu-1">
+                <textarea class="pj-wbk" name="" id="" cols="20" rows="5">请填写备注，最多50字</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(".wancheng").on("click",function(){
+        $(".mask").hide();
+    })
+</script>
+</html>

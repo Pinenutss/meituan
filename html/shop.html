@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>店铺详情</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/AllCss.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/swiper.jquery.min.js"></script>
+</head>
+<body class="shop" id="shop">
+    <!--店铺名字-->
+    <div class="shop-title border-all-bottom">
+        <div class="shop-img"></div>
+        <div class="shop-msg">
+            <p class="p1">港式茶餐厅</p>
+            <p class="p2">起送￥<span>30</span></p>
+            <p class="p3">营业时间:<span>09:00-21:00</span></p>
+        </div>
+        <div class="shop-close">
+            <span>营业中</span>
+        </div>
+    </div>
+    <!--店铺选择-->
+    <div class="shop-all">
+        <div class="shop-1">
+            <ul>
+                <li class="active">热销</li>
+                <li>折扣</li>
+                <li>超值套餐</li>
+                <li>新品专区</li>
+                <li>素食专区</li>
+            </ul>
+        </div>
+        <div class="shop-2">
+            <div class="shop-bus">
+                <div class="shop-3 active">
+                    <div class="shop-3-img"></div>
+                    <div class="shop-3-msg">
+                        <p class="p1">我是名字我是名字</p>
+                        <p class="p2"><span>$10.00</span>/个</p>
+                        <p class="p3">
+                            <i class="icon icon-jian"></i>
+                            <span class="p-num">2</span>
+                            <span class="icon icon-jia"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shop-3">
+                    <div class="shop-3-img"></div>
+                    <div class="shop-3-msg">
+                        <p class="p1">我是名字我是名字</p>
+                        <p class="p2"><span>$10.00</span>/个</p>
+                        <p class="p3">
+                            <i class="icon icon-jian"></i>
+                            <span class="p-num">2</span>
+                            <span class="icon icon-jia"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-bus" style="display: none">
+                <div class="shop-3 active">
+                    <div class="shop-3-img"></div>
+                    <div class="shop-3-msg">
+                        <p class="p1">我是名字我是名字</p>
+                        <p class="p2"><span>$10.00</span>/个</p>
+                        <p class="p3">
+                            <i class="icon icon-jian"></i>
+                            <span class="p-num">2</span>
+                            <span class="icon icon-jia"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shop-3">
+                    <div class="shop-3-img"></div>
+                    <div class="shop-3-msg">
+                        <p class="p1">我是名字我是名字</p>
+                        <p class="p2"><span>$10.00</span>/个</p>
+                        <p class="p3">
+                            <span class="choose-guige">选择规格</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="shop-foot">
+        <div class="foot-1">
+            <div class="foot-1-img"><span>2</span></div>
+        </div>
+        <div class="foot-2">
+            <p class="p1">$<span>120.00</span></p>
+            <p class="p2">不含配送费</p>
+        </div>
+        <button class="foot-3">选好了</button>
+    </div>
+    <!--不接单-->
+    <div class="shop-mask" style="display: none">
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">此店铺休息中，暂不接单</div>
+            <div class="weui-dialog__ft border-top">
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+            </div>
+        </div>
+    </div>
+    <!--订单-->
+    <div class="shop-mask" style="display: none">
+        <div class="weui-mask"></div>
+        <div class="xq-mask">
+            <div class="xq-title">规格详情<i class="icon icon-cha"></i></div>
+            <div class="xq-leixing">
+                <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
+                <p class="flex-father">
+                    <span class="active">材料1</span>
+                    <span>材料2</span>
+                    <span>材料3</span>
+                    <span>材料4</span>
+                    <span>材料5</span>
+                    <span>材料6</span>
+                </p>
+            </div>
+            <div class="xq-leixing">
+                <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
+                <p class="flex-father">
+                    <span class="active">材料1</span>
+                    <span>材料2</span>
+                    <span>材料3</span>
+                    <span>材料4</span>
+                    <span>材料5</span>
+                    <span>材料6</span>
+                </p>
+            </div>
+            <div class="gouwuche">
+                <span class="gouwuche-sp"><i class="icon icon-gouwuche"></i>加入购物车</span>
+            </div>
+        </div>
+    </div>
+    <!--购物车-->
+    <div class="shop-mask" style="display: none">
+        <div class="gouwu-list border-all-bottom">
+            <p><i class="icon icon-qingkong"></i>清空购物车</p>
+            <div class="border-all-bottom gouwuche-msg">
+                <span class="sp1">香辣面包</span>
+                <span class="sp2">$10.00/个</span>
+                <div class="p3">
+                    <i class="icon icon-jian"></i>
+                    <span class="p-num">2</span>
+                    <span class="icon icon-jia"></span>
+                </div>
+            </div>
+            <div class="border-all-bottom gouwuche-msg">
+                <span class="sp1">香辣面包</span>
+                <span class="sp2">$10.00/个</span>
+                <div class="p3">
+                    <i class="icon icon-jian"></i>
+                    <span class="p-num">2</span>
+                    <span class="icon icon-jia"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var screenHeight=document.documentElement.clientHeight;
+    var screenWidth=document.documentElement.clientWidth;
+    var body=document.getElementById('shop');
+    body.style.width=screenWidth+"px";
+    body.style.height=screenHeight+"px";
+</script>
+</html>

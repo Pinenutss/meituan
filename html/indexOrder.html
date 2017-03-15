@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>首页--订单</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/AllCss.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/swiper.jquery.min.js"></script>
+</head>
+<body class="index order-index">
+    <!--首页订单nav-->
+    <div class="dingdan-nav flex-father">
+        <span class="dingdan-zhuangtai  active">全部订单</span>
+        <span class="dingdan-xiangqing">待评价</span>
+    </div>
+    <!--全部订单-->
+    <div class="dingdan qb-dd border-top border-all-bottom">
+        <div class="qb-title border-bottom">
+            <i class="icon icon-dian"></i>
+            <span class="qb-mz">我是名字我是名字我是名字</span>
+            <span class="qb-zt">未接单</span>
+        </div>
+        <div class="qb-qbpz border-bottom">
+            <p><span class="qb-qbpz1">我是名字我是名字</span><span class="qb-qbpz2">X3</span></p>
+            <p><span class="qb-qbpz1">我是名字我是名字</span><span class="qb-qbpz2">X3</span></p>
+        </div>
+        <div class="qb-jg">
+            <p>共<span>4</span>件商品，共付<span>$4.00</span></p>
+        </div>
+    </div>
+    <!--待评价-->
+    <div class="pingjia qb-dd border-top border-all-bottom" style="display: none">
+        <div class="qb-title border-bottom">
+            <i class="icon icon-dian"></i>
+            <span class="qb-mz">我是名字我是名字我是名字</span>
+            <span class="qb-zt">未接单</span>
+        </div>
+        <div class="qb-qbpz border-bottom">
+            <p><span class="qb-qbpz1">我是名字我是名字</span><span class="qb-qbpz2">X3</span></p>
+            <p><span class="qb-qbpz1">我是名字我是名字</span><span class="qb-qbpz2">X3</span></p>
+        </div>
+        <div class="qb-jg">
+            <p>共<span>4</span>件商品，共付<span>$4.00</span> <span class="qb-dpj">待评价</span></p>
+        </div>
+    </div>
+    <!--没有数据-->
+    <div class="gl-mei">
+        <i class="icon icon-mei"></i>
+        <p>暂时没有数据</p>
+    </div>
+<!--底部-->
+<div class="db border-top">
+    <div><i class="icon icon-db1"></i><p>首页</p></div>
+    <div class="active"><i class="icon icon-db2 "></i><p>订单</p></div>
+    <div><i class="icon icon-db3"></i><p>我的</p></div>
+</div>
+</body>
+<script>
+    $(".dingdan-zhuangtai").on("click",function(){
+        $(this).addClass("active");
+        $(".dingdan-xiangqing").removeClass("active")
+        $(".dingdan").show();
+        $(".pingjia").hide();
+    })
+    $(".dingdan-xiangqing").on("click",function(){
+        $(this).addClass("active");
+        $(".dingdan-zhuangtai").removeClass("active")
+        $(".dingdan").hide();
+        $(".pingjia").show();
+    })
+</script>
+</html>

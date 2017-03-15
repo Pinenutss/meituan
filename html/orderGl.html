@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/AllCss.css"/>
+    <link rel="stylesheet" href="../css/weui.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/weui.min.js"></script>
+</head>
+<body class="order-gl">
+    <h4 class="border-all-bottom"><i class="icon icon-more"></i>订单管理</h4>
+    <div class="order-all">
+        <div class="gl-nav flex-father border-all-bottom">
+            <span class="xdd active">新订单</span>
+            <span class="jjz">进行中</span>
+            <span class="ywc">已完成</span>
+        </div>
+        <!--新订单-->
+        <div class="xdd-gl gl-new">
+            <div class="shangjia-mingzi border-bottom">
+                <i class="icon icon-dian"></i>
+                <p>我是名字我是名字我是名字</p>
+                <span>02-16 12:00:00</span>
+                <span class="gl-dai">待接单</span>
+            </div>
+            <div class="dianpu flex-father border-bottom">
+                <div class="dizhi">店铺地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+            <div class="dianpu flex-father border-all-bottom">
+                <div class="dizhi">配送地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+        </div>
+        <!--进行中-->
+        <div class="jjz-gl gl-new" style="display: none">
+            <div class="shangjia-mingzi border-bottom">
+                <i class="icon icon-dian"></i>
+                <p>我是名字我是名字我是名字</p>
+                <span>02-16 12:00:00</span>
+                <span class="gl-dai">已接单</span>
+            </div>
+            <div class="dianpu flex-father border-bottom">
+                <div class="dizhi">店铺地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+            <div class="dianpu flex-father border-all-bottom">
+                <div class="dizhi">配送地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+        </div>
+        <!--已完成-->
+        <div class="ywc-gl gl-new" style="display: none">
+            <div class="shangjia-mingzi border-bottom">
+                <i class="icon icon-dian"></i>
+                <p>我是名字我是名字我是名字</p>
+                <span>02-16 12:00:00</span>
+                <span class="gl-dai">已完成</span>
+            </div>
+            <div class="dianpu flex-father border-bottom">
+                <div class="dizhi">店铺地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+            <div class="dianpu flex-father border-all-bottom">
+                <div class="dizhi">配送地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+        </div>
+        <!--没有数据-->
+        <div class="gl-mei">
+            <i class="icon icon-mei"></i>
+            <p>暂时没有数据</p>
+        </div>
+    </div>
+    <!--右边菜单-->
+    <div class="yb-cd">
+            <i class="icon icon-cd"></i>
+            <span><i class="icon icon-pwd"></i>登录</span>
+            <span><i class="icon icon-tui"></i>退出</span>
+    </div>
+    <!--弹窗-->
+    <div class="dingdan-mask">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">确定要退出登录？</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".yb-cd").on("click",function(){
+        $(this).hide();
+    })
+    $(".icon-more").on("click",function(){
+        $(".yb-cd").show();
+    })
+    $(".xdd").on("click",function(){
+        $(this).addClass("active");
+        $(".jjz").removeClass("active");
+        $(".ywc").removeClass("active");
+        $(".xdd-gl").show();$(".ywc-gl").hide();$(".jjz-gl").hide();
+    })
+    $(".jjz").on("click",function(){
+        $(this).addClass("active");
+        $(".xdd").removeClass("active");
+        $(".ywc").removeClass("active");
+        $(".xdd-gl").hide();$(".ywc-gl").hide();$(".jjz-gl").show();
+    })
+    $(".ywc").on("click",function(){
+        $(this).addClass("active");
+        $(".jjz").removeClass("active");
+        $(".xdd").removeClass("active");
+        $(".xdd-gl").hide();$(".ywc-gl").show();$(".jjz-gl").hide();
+    })
+</script>
+</html>
