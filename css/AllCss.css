@@ -198,7 +198,7 @@ div {
 }
 
 .index .ct-zl {
-    padding: 20px 0;
+    padding: 20px 0 0;
     background: #ffffff;
     margin-bottom: 10px;
 }
@@ -250,6 +250,7 @@ div {
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 .468rem;
 }
 
 .index .ct-zl .flex-father .ct-1 p {
@@ -283,27 +284,35 @@ div {
 }
 
 .index .ct-zl .flex-father .ct-2 p {
+  width: 90%;
+display: inline-block;
     font-size: 16px;
     color: #333;
     text-align: center;
-    margin: 5px 0 10px 0;
+    margin: 0 5px;
+    padding: 5px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    height: 24px;
+
 }
 
 .index .ct-zl .flex-father .ct-2 .img {
-    width: 4.5rem;
-    height: 3rem;
-    margin: auto;
+    width: 4.3rem;
+    height: 2.1785rem;
+    background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
 }
-
+.index .ct-zl .flex-father .ct-2:nth-of-type(odd) .img{
+  float: left;
+}
+.index .ct-zl .flex-father .ct-2:nth-of-type(even) .img{
+  float: right;
+}
 .index .ct-gd {
-    padding: .4rem;
+    padding: .468rem;
     background: #ffffff;
     /*    margin-bottom: 40px;*/
 }
@@ -358,8 +367,8 @@ div {
 }
 
 .index .ct-fjdd .img {
-    width: 2.25rem;
-    height: 1.35rem;
+  width: 2.5rem;
+  height: 1.56rem;
     float: left;
     background-size: cover;
     -webkit-background-size: cover;
@@ -372,23 +381,31 @@ div {
 }
 
 .index .ct-mz .ct-mz1 {
-    font-size: 16px;
-    color: #000;
+  width: 4.2rem;
+  font-size: 16px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
 }
 
 .index .ct-mz .ct-mz2 {
-    font-size: 14px;
-    color: #333333;
+  margin: 2px 0;
+  font-size: 12px;
+  color: #333333;
 }
 
 .index .ct-mz .ct-mz3 {
-    font-size: 14px;
-    color: #666666;
+  margin: 2px 0;
+  font-size: 12px;
+  color: #333333;
 }
 
 .index .ct-jl {
     color: #ff8212;
     font-size: 14px;
+    padding-top: 4px;
 }
 
 .index .ct-fjdd .icon-jl {
@@ -436,12 +453,7 @@ div {
     color: #ff8212;
 }
 
-.index .db .active .icon-db1 {
-    background-image: url("../images/index162@2x.png");
-    width: 23px;
-    height: 23px;
-    background-size: 23px 23px;
-}
+
 
 .index .db .icon-db1 {
     background-image: url("../images/index16@2x.png");
@@ -450,6 +462,12 @@ div {
     background-size: 23px 23px;
 }
 
+.index .db .icon-db1.active {
+    background-image: url("../images/index162@2x.png");
+    width: 23px;
+    height: 23px;
+    background-size: 23px 23px;
+}
 .index .db .icon-db2 {
     background-image: url("../images/index14@2x.png");
     width: 23px;
@@ -552,6 +570,13 @@ div {
 
 /*搜索*/
 
+.search{
+  background-color: #fff !important;
+}
+.search-wrap{
+  background-color: #fafafa;
+  padding:.3125rem 0;
+}
 .search .ct-fjdd {
     display: flex;
     position: relative;
@@ -594,6 +619,7 @@ div {
 
 .search .ct-jl {
     color: #ff8212;
+    padding-top: 4px;
 }
 
 .search .ct-fjdd .icon-jl {
@@ -607,7 +633,7 @@ div {
 
 .search .xz-ss-1 {
     position: relative;
-    margin: 10px .468rem;
+    margin: 0 .468rem;
     background: #eeeeee;
     border-radius: 15px;
     padding: 2px 20px;
@@ -927,14 +953,15 @@ div {
 }
 
 .zhuangtai div {
-    width: 25rem;
-    height: 3.5rem;
-    line-height: 35px;
+    width: 7.81rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
     border: 1px solid #ff8212;
     margin: 20px auto;
     text-align: center;
     background: #ffffff;
-    border-radius: 1.7rem;
+    border-radius: 1.1rem;
+    font-size: 14px;
 }
 
 .dingdan-mask {
@@ -961,14 +988,16 @@ div {
 .dingdan .xiangqing .shangjia-mingzi {
     height: 46px;
     background: #ffffff;
-    padding: 0 15px;
+    padding: 0 .468rem;
     position: relative;
+    font-size: 14px;
 }
 
 .dingdan .xiangqing .shangjia-mingzi p {
     line-height: 20px;
     position: relative;
     top: 5px;
+    font-size: 14px;
 }
 
 .dingdan .xiangqing .shangjia-mingzi span {
@@ -989,7 +1018,7 @@ div {
 
 .dingdan .xiangqing .dianpu {
     background: #ffffff;
-    padding: 10px 15px;
+    padding: .375rem .468rem;
     position: relative;
     font-size: 14px;
 }
@@ -1000,7 +1029,7 @@ div {
 
 .dingdan .xiangqing .guke-mingzi {
     position: relative;
-    padding: 0 12px;
+    padding: 0 .468rem;
     background: #ffffff;
 }
 
@@ -1123,7 +1152,7 @@ div {
 }
 
 .dingdan .xiangqing .zhifu {
-    padding: 12px;
+    padding: .468rem;
     font-size: 14px;
     background: #ffffff;
     margin-top: 10px;
@@ -1131,6 +1160,7 @@ div {
 
 .dingdan .feiyong {
     background: #ffffff;
+    padding: 0 .468rem;
 }
 
 .dingdan .feiyong .icon-wenti {
@@ -1393,13 +1423,10 @@ div {
 
 .xq-mask {
     position: fixed;
-    width: 290px;
-    top: 150px;
-    left: -145px;
-    margin-left: 50%;
-    min-height: 250px;
-    max-height: 350px;
-    overflow: scroll;
+    width: 9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background: #ffffff;
     padding: 10px 8px 20px;
     z-index: 10001;
@@ -1441,26 +1468,29 @@ div {
 
 .xq-leixing .flex-father {
     font-size: 14px;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .xq-leixing .flex-father div {
-    flex: 1;
     position: relative;
 }
 
-.xq-leixing .flex-father input {
+.xq-leixing .flex-father input[type=radio]+label {
     display: inline-block;
-    padding: 12px;
+    padding: 3px 15px;
     min-width: 50px;
     border: 1px solid #e0e0e0;
     border-radius: 15px;
     text-align: center;
-    margin: 10px 7px;
-    position: relative;
+    margin: 15px 5px 0 5px;
 }
 
+.xq-leixing .flex-father input[type=radio]:checked+label {
+    border: 1px solid #ff8212;
+    background: #fdf6f0;
+}
 .xq-leixing .flex-father span {
     position: absolute;
     top: 11px;
@@ -2424,22 +2454,37 @@ color: #666666;
 }
 
 .shop .shop-all {
-    display: flex;
-    height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 90px;
+  bottom: 1.2rem;
 }
-
+.foode-type-wrap h4{
+    font-size: 14px;
+    font-weight: normal;
+}
 .shop .shop-1 {
-    width: 2.5625rem;
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    width: 80px;
+    /*width: 2.5625rem;*/
     border-right: 1px solid #dcdcdc;
+    background-color: #eee;
 }
 
 .shop .shop-1 ul li {
     width: 100%;
     height: 1.1rem;
-    line-height: 1.1rem;
+    line-height: .8rem;
     padding: 5px 0 5px 12px;
     border-bottom: 1px dashed #dcdcdc;
     font-size: 14px;
+
 }
 
 .shop .shop-1 ul .active {
@@ -2447,7 +2492,9 @@ color: #666666;
 }
 
 .shop .shop-2 {
-    flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .shop .shop-2 .shop-bus .active {
@@ -2528,7 +2575,7 @@ color: #666666;
 }
 
 .shop .shop-foot {
-    height: 45px;
+    height: 1.2rem;
     display: flex;
     position: fixed;
     bottom: 0;

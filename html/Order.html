@@ -10,8 +10,8 @@
     <meta name="format-detection" content="telephone=no">
     <title>订单详情</title>
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/AllCss.css" />
     <link rel="stylesheet" href="../css/weui.css" />
+    <link rel="stylesheet" href="../css/AllCss.css" />
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/weui.min.js"></script>
 </head>
@@ -119,29 +119,53 @@
             <div class="xq-leixing">
                 <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
                 <div class="flex-father">
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" id="food_type_1" value="A区"><label for="food_type_1">番茄炒蛋</label></div>
+                    <div><input type="radio" id="food_type_2" value="A区"><label for="food_type_2">蛋炒饭</label></div>
+                    <div><input type="radio" id="food_type_3" value="A区"><label for="food_type_3">清汤豆腐</label></div>
+                    <div><input type="radio" id="food_type_4" value="A区"><label for="food_type_4">糖醋排骨</label></div>
+                    <div><input type="radio" id="food_type_5" value="A区"><label for="food_type_5">A区</label></div>
+                    <div><input type="radio" id="food_type_6" value="A区"><label for="food_type_6">A区</label></div>
+                    <div><input type="radio" id="food_type_7" value="A区"><label for="food_type_7">A区</label></div>
+                    <div><input type="radio" id="food_type_8" value="A区"><label for="food_type_8">A区</label></div>
                 </div>
             </div>
             <div class="xq-leixing">
                 <p class="xq-choose">请选择汤底 <span>(多选)</span>：</p>
                 <div class="flex-father">
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="radio" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
-                    <div><input type="checkbox" class="active" value="A区"><span>A区</span></div>
+                    <div><input type="radio" id="food2_type_1" value="A区"><label for="food2_type_1">A区</label></div>
+                    <div><input type="radio" id="food2_type_2" value="A区"><label for="food2_type_2">A区</label></div>
+                    <div><input type="radio" id="food2_type_3" value="A区"><label for="food2_type_3">A区</label></div>
+                    <div><input type="radio" id="food2_type_4" value="A区"><label for="food2_type_4">A区</label></div>
+                    <div><input type="radio" id="food2_type_5" value="A区"><label for="food2_type_5">A区</label></div>
+                    <div><input type="radio" id="food2_type_6" value="A区"><label for="food2_type_6">A区</label></div>
+                    <div><input type="radio" id="food2_type_7" value="A区"><label for="food2_type_7">A区</label></div>
+                    <div><input type="radio" id="food2_type_8" value="A区"><label for="food2_type_8">A区</label></div>
                 </div>
             </div>
+            <div class="xq-leixing">
+                <p class="xq-choose">请选择汤底 <span>(多选)</span>：</p>
+                <div class="flex-father">
+                    <div><input type="radio" id="food3_type_1" value="A区"><label for="food3_type_1">A区</label></div>
+                    <div><input type="radio" id="food3_type_2" value="A区"><label for="food3_type_2">A区</label></div>
+                    <div><input type="radio" id="food3_type_3" value="A区"><label for="food3_type_3">A区</label></div>
+                    <div><input type="radio" id="food3_type_4" value="A区"><label for="food3_type_4">A区</label></div>
+                    <div><input type="radio" id="food3_type_5" value="A区"><label for="food3_type_5">A区</label></div>
+                    <div><input type="radio" id="food3_type_6" value="A区"><label for="food3_type_6">A区</label></div>
+                    <div><input type="radio" id="food3_type_7" value="A区"><label for="food3_type_7">A区</label></div>
+                    <div><input type="radio" id="food3_type_8" value="A区"><label for="food3_type_8">A区</label></div>
+                </div>
+            </div>
+            <!--
+            <div class="mask-2">
+                <p><input type="radio" id="district0" name="dis"><label for="district0">A区</label></p>
+                <p><input type="radio" id="district1" name="dis"><label for="district1">B区</label></p>
+                <p><input type="radio" id="district2" name="dis"><label for="district2">C区</label></p>
+                <p><input type="radio" id="district3" name="dis"><label for="district3">D区</label></p>
+                <p><input type="radio" id="district4" name="dis"><label for="district4">E区</label></p>
+                <p><input type="radio" id="district5" name="dis"><label for="district5">F区</label></p>
+                <p><input type="radio" id="district6" name="dis"><label for="district6">G区</label></p>
+                <p><input type="radio" id="district7" name="dis"><label for="district7">H区</label></p>
+            </div> -->
         </div>
     </div>
 </body>
