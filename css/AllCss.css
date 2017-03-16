@@ -10,6 +10,10 @@ div {
     box-sizing: border-box;
 }
 
+.wrap-s {
+    padding: 0 .468rem;
+}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -128,23 +132,29 @@ div {
     font-size: 14px;
     color: #999999;
     margin-left: 10px;
+    position: relative;
 }
 
 .index .xz-ss input {
-    position: relative;
-    top: -17px;
-    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 1.5625rem;
     border: 0;
     background: #eeeeee;
 }
 
 .index .icon-sou {
+    position: absolute;
     background-image: url("../images/index4@2x.png");
     width: 15px;
     height: 15px;
     background-size: 15px 15px;
     position: relative;
-    top: -14px;
+    top: 50%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
     left: 2px;
     margin-right: 12px;
 }
@@ -545,8 +555,9 @@ div {
 .search .ct-fjdd {
     display: flex;
     position: relative;
-    padding: 15px 15px;
+    padding: .468rem 0;
     background: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
 .search .ct-fjdd img {
@@ -560,17 +571,24 @@ div {
 }
 
 .search .ct-mz .ct-mz1 {
-    font-size: 14px;
+    width: 4.2rem;
+    font-size: 16px;
     color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
 }
 
 .search .ct-mz .ct-mz2 {
-    font-size: 14px;
+    margin: 2px 0;
+    font-size: 12px;
     color: #333333;
 }
 
 .search .ct-mz .ct-mz3 {
-    font-size: 14px;
+    margin: 2px 0;
+    font-size: 12px;
     color: #666666;
 }
 
@@ -588,10 +606,8 @@ div {
 }
 
 .search .xz-ss-1 {
-    position: inherit;
-    width: 95%;
-    margin: 10px auto;
-    margin-right: 10px;
+    position: relative;
+    margin: 10px .468rem;
     background: #eeeeee;
     border-radius: 15px;
     padding: 2px 20px;
@@ -599,50 +615,71 @@ div {
     line-height: 25px;
     font-size: 14px;
     color: #999999;
-    margin-left: 10px;
+    box-sizing: border-box;
 }
 
 .search .xz-ss-1 input {
     border: 0;
     height: 20px;
     background: #eeeeee;
-    width: 90%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.search .search-img {
+    display: block;
+    width: 2.5rem;
+    height: 1.56rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 
 /*收货地址*/
 
 .sh-dz .btn-sh {
-    height: 65px;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    position: relative;
 }
 
 .sh-dz .sh-btn {
-    width: 160px;
-    height: 35px;
-    line-height: 35px;
+    position: absolute;
+    width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
     border: 2px solid #ff8212;
-    border-radius: 15px;
+    border-radius: 1rem;
     background: #ffffff;
     color: #ff8212;
-    position: relative;
     top: 50%;
     left: 50%;
-    margin-left: -80px;
-    margin-top: -18px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .sh-dz .sh-nr {
     background: #ffffff;
     font-size: 14px;
     color: #000000;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: .3125rem;
 }
 
 .sh-dz .sh-nr p {
-    padding: 12px 15px;
+    padding: .375rem .468rem;
 }
 
 .sh-dz .sh-nr .sh-p2 {
     padding-top: 0;
+    color: #666;
 }
 
 .sh-dz .sh-dh {
@@ -667,8 +704,9 @@ div {
 }
 
 .sh-dz .sh-sc .sp1 {
-    margin-right: 15px;
+    margin: 5px 15px 0 0;
     display: inline-block;
+    font-size: 0;
 }
 
 .sh-dz .icon-add1 {
@@ -691,13 +729,14 @@ div {
 
 .sh-dz .sh-zj {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    height: 35px;
-    line-height: 35px;
+    height: 1rem;
+    line-height: 1rem;
     text-align: center;
     color: #ffffff;
     background: #ff8212;
+    font-size: 14px;
 }
 
 
@@ -798,6 +837,7 @@ div {
     position: relative;
     box-sizing: border-box;
     background: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .dingdan .dingdan-nav:after {
@@ -857,9 +897,11 @@ div {
     background: #ff8212;
     color: #ffffff;
 }
-.weui-rater{
-  display: block !important;
+
+.weui-rater {
+    display: block !important;
 }
+
 .zhuangtai .icon {
     width: 18px;
     height: 18px;
@@ -908,11 +950,12 @@ div {
 
 .xiangqing .mingzi {
     position: relative;
-    padding: 0 15px;
-    height: 30px;
-    line-height: 30px;
+    padding: 0 .468rem;
+    height: .9375rem;
+    line-height: .9375rem;
     font-size: 14px;
     color: #333333;
+    background-color: #f9f9f9;
 }
 
 .dingdan .xiangqing .shangjia-mingzi {
@@ -1029,13 +1072,13 @@ div {
 
 .dingdan .qingkuang p {
     font-size: 14px;
-    padding: 6px 12px;
+    padding: .1875rem .468rem;
     background: #ffffff;
     position: relative;
 }
 
 .dingdan .qingkuang-mingzi {
-    width: 180px;
+    flex: 0 0 210px;
 }
 
 .dingdan .qingkuang-mingzi .guige {
@@ -1043,7 +1086,7 @@ div {
     color: #ffffff;
     display: inline-block;
     text-align: center;
-    margin-left: -4px;
+    margin-left: 15px;
     border-radius: 15px;
     padding: 0 5px;
 }
@@ -1074,9 +1117,9 @@ div {
 
 .dingdan .beizhu {
     margin-top: 10px;
-    padding: 12px;
+    padding: .468rem;
     background: #ffffff;
-    font: 14px;
+    font-size: 14px;
 }
 
 .dingdan .xiangqing .zhifu {
@@ -1099,9 +1142,14 @@ div {
 }
 
 .dingdan .feiyong div {
-    padding: 12px;
+    padding: .275rem 0;
     font-size: 14px;
     position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.dingdan .feiyong div:nth-last-of-type(1) {
+    border: none !important;
 }
 
 .dingdan .feiyong .feiyong-1 {
@@ -1225,7 +1273,7 @@ div {
 .dingdan .zt-cx .dd-list {
     position: relative;
     margin-bottom: 10px;
-    padding: 15px 15px;
+    padding: .468rem;
     background: #ffffff;
 }
 
@@ -1317,7 +1365,7 @@ div {
 }
 
 .go-mask .go-maskContent h3 {
-  font-weight: normal;
+    font-weight: normal;
     text-align: center;
     margin-bottom: 15px;
     font-size: 16px;
@@ -1326,11 +1374,13 @@ div {
 .go-mask .go-maskContent p {
     font-size: 16px;
 }
-.go-mask .go-maskContent .weui-rater{
-  padding: .2rem 0 .25rem;
+
+.go-mask .go-maskContent .weui-rater {
+    padding: .2rem 0 .25rem;
 }
+
 .go-mask .go-maskContent .pj-wbk {
-  font-size: 14px;
+    font-size: 14px;
     width: 260px;
     min-height: 160px;
     background: #f9f9f9;
@@ -1429,6 +1479,7 @@ div {
     background-image: url("../images/login@2x.png");
     padding: 16.5%;
     background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .login-all {
@@ -1451,7 +1502,7 @@ div {
     left: 25px;
     padding-left: 5px;
     background: #f9f9f9;
-    width: 90%s;
+    width: 90%;
 }
 
 .login .icon-phone {
@@ -1501,12 +1552,15 @@ div {
 /*订单管理*/
 
 .order-gl h4 {
-    height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    padding: 0 .468rem;
     text-align: center;
     position: relative;
     background: #ffffff;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
 }
 
 .order-gl h4:before {
@@ -1527,38 +1581,64 @@ div {
 .icon-more {
     background-image: url("../images/order-more@2x.png");
     background-size: 15px 11px;
-    height: 40px;
-    width: 40px;
+    height: 1.25rem;
+    width: 1.25rem;
     position: absolute;
-    left: 15px;
+    left: .486rem;
     background-position: left;
     background-repeat: no-repeat;
     float: left;
 }
 
 .order-gl .gl-nav {
-    padding: 0 15px;
+    padding: 20px .468rem;
     background: #ffffff;
     position: relative;
     margin-bottom: 10px;
-}
-
-.order-gl .gl-nav .active {
-    border-bottom: 1px solid #ff8212;
-    margin: 0 12px;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .order-gl .gl-nav span {
     flex: 1;
     text-align: center;
-    min-height: 40px;
-    line-height: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+
+.order-gl .gl-nav span:last-child {
+    border-right: none;
+}
+
+.order-gl .gl-nav span:after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 0;
+    border-bottom: 1px solid #ff8212;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.order-gl .gl-nav .active:after {
+    display: block;
+    /*margin: 0 12px;*/
+}
+
+.order-gl .xdd-gl {
+    margin-bottom: 10px;
 }
 
 .order-gl .shangjia-mingzi {
     background: #ffffff;
     padding: 12px 15px;
     position: relative;
+    font-size: 14px;
 }
 
 .order-gl .shangjia-mingzi:before {
@@ -1600,12 +1680,12 @@ div {
 
 .order-gl .gl-dai {
     float: right;
-    padding: 5px 10px;
+    padding: 2px 10px;
     border-radius: 20px;
     border: 1px solid #ff8212;
     position: absolute!important;
-    right: 15px!important;
-    top: 12px!important;
+    right: .468rem!important;
+    top: 17px!important;
 }
 
 .order-gl .dianpu {
@@ -1761,12 +1841,13 @@ div {
 
 .order-index .dingdan-nav {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 1.25rem;
+    line-height: 1.25rem;
     display: flex;
     position: relative;
     box-sizing: border-box;
     background: #ffffff;
+    font-size: 16px;
 }
 
 .order-index .dingdan-nav:after {
@@ -1821,7 +1902,7 @@ div {
 
 .order-index .qb-dd .qb-title {
     position: relative;
-    padding: 10px 15px;
+    padding: .2125rem .468rem;
 }
 
 .order-index .qb-dd .icon-dian {
@@ -1838,14 +1919,19 @@ div {
 }
 
 .order-index .qb-dd .qb-title .qb-zt {
-    float: right;
-    position: relative;
-    top: 5px;
+    position: absolute;
+    right: .468rem;
+    text-align: right;
+    color: #ccc;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .order-index .qb-dd .qb-qbpz {
     position: relative;
-    padding: 15px;
+    padding: .2125rem .468rem;
     font-size: 14px;
     color: #666666;
 }
@@ -1859,16 +1945,20 @@ div {
 }
 
 .order-index .qb-dd .qb-jg {
-    padding: 10px 15px;
+    padding: .2125rem .468rem;
+    font-size: 14px;
+    color: #666;
+    position: relative;
 }
 
 .order-index .qb-dd .qb-jg .qb-dpj {
     border: 1px solid #ff8212;
     display: inline-block;
-    position: relative;
-    top: -5px;
-    float: right;
-    padding: 3px 12px;
+    position: absolute;
+    top: 50%;
+    right: .468rem;
+    transform: translateY(-50%);
+    padding: 2px 10px;
     border-radius: 15px;
     color: #ff8212;
 }
@@ -1917,37 +2007,45 @@ div {
     width: 100%;
     font-size: 1.5rem;
     color: #ffffff;
+    font-size: 16px;
 }
 
 .personal .gr-dz {
-    padding: 15px;
+    padding: .468rem;
     background: #ffffff;
     position: relative;
 }
 
+.personal .gr-dz p {
+    font-size: 14px;
+}
+
 .personal .icon-grdz {
     background-image: url("../images/per3@2x.png");
-    width: 11px;
-    height: 19px;
+    width: 14px;
+    height: 18px;
     vertical-align: -5px;
-    margin-right: 12px;
-    background-size: 11px 19px;
+    margin: 0 12px 0 5px;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .personal .icon-yhj {
     background-image: url("../images/per4@2x.png");
-    width: 14px;
-    height: 9px;
-    background-size: 14px 9px;
+    width: 18px;
+    height: 12px;
     vertical-align: 0;
-    margin-right: 12px;
+    margin: 0 14px 0 3px;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .personal .icon-you {
-    float: right;
-    position: relative;
-    top: 5px;
-    left: -10px;
+    position: absolute;
+    left: auto!important;
+    top: 50%!important;
+    right: .468rem!important;
+    transform: translateY(-50%)!important;
 }
 
 
@@ -1992,8 +2090,56 @@ div {
     color: #333333;
 }
 
+.edit-btn-wrap {
+    position: relative;
+    width: 100%;
+    height: 4.3rem;
+}
+
+.edit .sh-btn {
+    position: absolute;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    border-radius: 15px;
+    background: #ff8212;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    outline: none;
+}
+
+.edit .sh-btn:active {
+    border: none;
+    background-color: #f59845;
+}
+
+.weui-cells {
+    margin-top: .3125rem !important;
+}
+
+.weui-cells:before {
+    border: none!important;
+}
+
+.weui-cells:after {
+    border: none!important;
+}
+
+.weui-cell:before {
+    left: 15px;
+    right: 15px;
+}
+
 
 /*订单结算*/
+
+.settlement {
+    padding-bottom: 1.25rem;
+}
 
 .settlement .icon-you {
     background-image: url("../images/index11@2x.png");
@@ -2005,13 +2151,14 @@ div {
 }
 
 .settlement .sent-order {
-    height: 40px;
-    line-height: 40px;
+    height: 1.25rem;
+    line-height: 1.25rem;
     display: flex;
     position: fixed;
     bottom: 0;
     background: #ffffff;
     width: 100%;
+    font-size: 14px;
 }
 
 .settlement .sent-order p {
@@ -2026,9 +2173,14 @@ div {
     width: 100px;
 }
 
+.settlement .sent-order button:active {
+    background: #faae6a;
+}
+
 .settlement .weui-cell {
     background: #ffffff;
-    padding: 12px 15px;
+    padding: .375rem .468rem;
+    font-size: 14px;
 }
 
 .settlement .feiyong-2 {
@@ -2044,11 +2196,15 @@ div {
 }
 
 .settlement .sh-p1 {
-    padding: 0 15px!important;
+    padding: 0 !important;
 }
 
 .settlement .sh-p2 {
-    padding: 0 15px!important;
+    padding: 0 !important;
+}
+
+.settlement .sh-dz .sh-nr {
+    border: none!important;
 }
 
 .settlement .mask {
@@ -2206,10 +2362,12 @@ div {
 }
 
 .shop .shop-img {
-    width: 80px;
-    height: 50px;
-    background-image: url("../images/index10@2x.png");
-    background-size: 80px 50px;
+    width: 2.5rem;
+    height: 1.5625rem;
+    background-position:center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .shop .shop-msg {
@@ -2218,18 +2376,23 @@ div {
 }
 
 .shop .shop-msg .p1 {
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     color: #000000;
 }
 
 .shop .shop-msg .p2 {
-    font-size: 14px;
-    color: #333333;
+
+    margin: 2px 0;
+font-size: 12px;
+color: #333333;
 }
 
 .shop .shop-msg .p3 {
-    font-size: 14px;
-    color: #666666;
+
+    margin: 2px 0;
+font-size: 12px;
+color: #666666;
 }
 
 .shop .shop-close {
@@ -2240,11 +2403,14 @@ div {
     background-size: 45px 34px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: -5px;
 }
 
 .shop .shop-close span {
     position: absolute;
     top: 45px;
+    font-size: 14px;
+    color: #e90000;
 }
 
 .shop .shop-open {
@@ -2263,15 +2429,15 @@ div {
 }
 
 .shop .shop-1 {
-    width: 90px;
+    width: 2.5625rem;
     border-right: 1px solid #dcdcdc;
 }
 
 .shop .shop-1 ul li {
     width: 100%;
-    height: 35px;
-    line-height: 35px;
-    padding-left: 15px;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    padding: 5px 0 5px 12px;
     border-bottom: 1px dashed #dcdcdc;
     font-size: 14px;
 }
@@ -2290,7 +2456,7 @@ div {
 
 .shop .shop-2 .shop-3 {
     display: flex;
-    padding: 15px;
+    padding: 8px;
     border-bottom: 1px dashed #dcdcdc;
     position: relative;
 }
@@ -2312,7 +2478,7 @@ div {
     width: 16px;
     height: 16px;
     background-size: 16px 16px;
-    vertical-align: -3px;
+    vertical-align: top;
 }
 
 .shop .icon-jia {
@@ -2320,21 +2486,27 @@ div {
     width: 16px;
     height: 16px;
     background-size: 16px 16px;
-    vertical-align: -3px;
+    vertical-align: top;
 }
 
 .shop .shop-3-msg .p1 {
-    font-size: 14px;
+  width: 4.2rem;
+    font-size: 16px;
     color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
 }
 
 .shop .shop-3-msg .p2 {
-    font-size: 14px;
-    color: #333333;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333333;
 }
 
 .shop .shop-3-msg .p3 {
-    font-size: 1.5rem;
+    font-size: 0;
     color: #222833;
     position: absolute;
     right: 20px;
@@ -2351,7 +2523,8 @@ div {
 
 .shop .shop-3-msg .p-num {
     display: inline-block;
-    padding: 0 10px;
+    font-size: 16px;
+    padding: 0 5px;
 }
 
 .shop .shop-foot {
@@ -2398,7 +2571,7 @@ div {
 }
 
 .shop .shop-foot .foot-2 .p1 {
-    font-size: 1.8rem;
+    font-size: 14px;
     color: #333333;
 }
 

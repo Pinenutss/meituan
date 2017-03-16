@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
@@ -8,12 +9,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <title>订单详情</title>
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/AllCss.css"/>
-    <link rel="stylesheet" href="../css/weui.css"/>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/AllCss.css" />
+    <link rel="stylesheet" href="../css/weui.css" />
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/weui.min.js"></script>
 </head>
+
 <body>
     <div class="dingdan">
         <div class="dingdan-nav flex-father">
@@ -22,35 +24,35 @@
         </div>
         <!--订单状态-->
         <div class="zhuangtai" style="display: none">
-             <div class="weijiedan"><i class="icon icon-mei"></i>未接单</div>
-             <div class="yijiedan"><i class="icon icon-you"></i>已接单</div>
-             <div class="peisong active"><i class="icon icon-pei2"></i>正在配送</div>
-             <div class="wancheng"><i class="icon icon-wan"></i>已完成</div>
+            <div class="weijiedan"><i class="icon icon-mei"></i>未接单</div>
+            <div class="yijiedan"><i class="icon icon-you"></i>已接单</div>
+            <div class="peisong active"><i class="icon icon-pei2"></i>正在配送</div>
+            <div class="wancheng"><i class="icon icon-wan"></i>已完成</div>
         </div>
         <!--订单详情-->
         <div class="xiangqing">
-             <p class="mingzi border-all-bottom">订单号：<span>我是订单我是订单我是订单</span></p>
+            <p class="mingzi border-all-bottom">订单号：<span>我是订单我是订单我是订单</span></p>
             <!--顾客名字-->
-             <div class="shangjia-mingzi border-bottom">
-                 <i class="icon icon-dian"></i>
-                 <p>我是名字我是名字我是名字</p>
-                 <span>02-16 12:00:00</span>
-             </div>
+            <div class="shangjia-mingzi border-bottom">
+                <i class="icon icon-dian"></i>
+                <p>我是名字我是名字我是名字</p>
+                <span>02-16 12:00:00</span>
+            </div>
             <!--商店地址-->
-             <div class="dianpu flex-father border-all-bottom">
-                  <div class="flex-sun dizhi">店铺地址：</div>
-                  <div>我是地址我是地址我是地址我是地址</div>
-             </div>
-             <p class="mingzi border-all-bottom">顾客信息</p>
+            <div class="dianpu flex-father border-all-bottom">
+                <div class="flex-sun dizhi">店铺地址：</div>
+                <div>我是地址我是地址我是地址我是地址</div>
+            </div>
+            <p class="mingzi border-all-bottom">顾客信息</p>
             <!--顾客信息-->
-             <div class="guke-mingzi border-all-bottom">
-                 <p class="border-all-bottom">顾客姓名：<span>名侦探小五郎</span></p>
-                 <div class="dianhua border-all-bottom flex-father">
-                     <p>顾客电话：<span class="dianhua-num">13511111111</span></p>
-                     <span class="flex-sun dianhua-sp"><i class="icon icon-dianhua"></i><span class="bohao">一键拨号</span></span>
-                 </div>
-                 <p>顾客地址：<span>名侦探小五郎</span></p>
-             </div>
+            <div class="guke-mingzi border-all-bottom">
+                <p class="border-all-bottom">顾客姓名：<span>名侦探小五郎</span></p>
+                <div class="dianhua border-all-bottom flex-father">
+                    <p>顾客电话：<span class="dianhua-num">13511111111</span></p>
+                    <span class="flex-sun dianhua-sp"><i class="icon icon-dianhua"></i><span class="bohao">一键拨号</span></span>
+                </div>
+                <p>顾客地址：<span>名侦探小五郎</span></p>
+            </div>
             <p class="mingzi border-all-bottom">订单情况</p>
             <!--订单情况-->
             <div class="qingkuang">
@@ -144,20 +146,21 @@
     </div>
 </body>
 <script>
-    $(".icon-cha").on("click",function(){
+    $(".icon-cha").on("click", function() {
         $(".xiangqing-mask").hide();
     })
-    $(".dingdan-zhuangtai").on("click",function(){
+    $(".dingdan-zhuangtai").on("click", function() {
         $(this).addClass("active")
         $(".dingdan-xiangqing").removeClass("active");
         $(".zhuangtai").show();
         $(".xiangqing").hide();
     })
-    $(".dingdan-xiangqing").on("click",function(){
+    $(".dingdan-xiangqing").on("click", function() {
         $(this).addClass("active")
         $(".dingdan-zhuangtai").removeClass("active");
         $(".zhuangtai").hide();
         $(".xiangqing").show();
     })
 </script>
+
 </html>
