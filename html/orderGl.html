@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
@@ -8,12 +9,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <title>订单管理</title>
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/AllCss.css"/>
-    <link rel="stylesheet" href="../css/weui.css"/>
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/weui.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/weui.css" />
+    <link rel="stylesheet" href="../css/AllCss.css" />
 </head>
+
 <body class="order-gl">
     <h4 class="border-all-bottom"><i class="icon icon-more"></i>订单管理</h4>
     <div class="order-all">
@@ -81,9 +81,9 @@
     </div>
     <!--右边菜单-->
     <div class="yb-cd">
-            <i class="icon icon-cd"></i>
-            <span><i class="icon icon-pwd"></i>登录</span>
-            <span><i class="icon icon-tui"></i>退出</span>
+        <i class="icon icon-cd"></i>
+        <span><i class="icon icon-pwd"></i>登录</span>
+        <span id="sign_out"><i class="icon icon-tui"></i>退出</span>
     </div>
     <!--弹窗-->
     <div class="dingdan-mask">
@@ -96,31 +96,56 @@
             </div>
         </div>
     </div>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/weui.min.js"></script>
 </body>
 <script>
-    $(".yb-cd").on("click",function(){
-        $(this).hide();
+    $(".yb-cd").on("click", function() {
+        $(this).animate({
+            width: "0"
+        }, {
+            queue: false,
+            duration: 500
+        }).hide();
     })
-    $(".icon-more").on("click",function(){
-        $(".yb-cd").show();
+    $('#sign_out').on('click', function() {
+        $('.dingdan-mask').show(500)
     })
-    $(".xdd").on("click",function(){
+    $('.weui-dialog__btn_default').on('click', function() {
+        $('.dingdan-mask').hide();
+    })
+    $(".icon-more").on("click", function() {
+        $(".yb-cd").animate({
+            width: "125"
+        }, {
+            queue: false,
+            duration: 500
+        }).show()
+    })
+    $(".xdd").on("click", function() {
         $(this).addClass("active");
         $(".jjz").removeClass("active");
         $(".ywc").removeClass("active");
-        $(".xdd-gl").show();$(".ywc-gl").hide();$(".jjz-gl").hide();
+        $(".xdd-gl").show();
+        $(".ywc-gl").hide();
+        $(".jjz-gl").hide();
     })
-    $(".jjz").on("click",function(){
+    $(".jjz").on("click", function() {
         $(this).addClass("active");
         $(".xdd").removeClass("active");
         $(".ywc").removeClass("active");
-        $(".xdd-gl").hide();$(".ywc-gl").hide();$(".jjz-gl").show();
+        $(".xdd-gl").hide();
+        $(".ywc-gl").hide();
+        $(".jjz-gl").show();
     })
-    $(".ywc").on("click",function(){
+    $(".ywc").on("click", function() {
         $(this).addClass("active");
         $(".jjz").removeClass("active");
         $(".xdd").removeClass("active");
-        $(".xdd-gl").hide();$(".ywc-gl").show();$(".jjz-gl").hide();
+        $(".xdd-gl").hide();
+        $(".ywc-gl").show();
+        $(".jjz-gl").hide();
     })
 </script>
+
 </html>

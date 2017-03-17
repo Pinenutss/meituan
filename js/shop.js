@@ -13,7 +13,7 @@
 
   foodsScroll.on('scroll',(pos) => {
     scrollY = Math.abs(Math.round(pos.y));
-    console.log(scrollY);
+    // console.log(scrollY);
     $('#shop_1').find('li').eq(moveCurrent()).addClass('active').siblings().removeClass('active');
   })
 
@@ -50,6 +50,20 @@
       console.log(moveDistance);
       $(this).addClass('active').siblings().removeClass('active');
       $('#shop_2').find('ul').scrollTop(moveDistance);
-      foodsScroll.scrollTo(0, -moveDistance,500);
-    })
+      foodsScroll.scrollTo(0, -moveDistance,100);
+    });
   })
+
+// 购物车弹窗
+var cartHandler = (function(){
+  var isOpen = false;
+    $('.shop-pop').on('click',function(){
+       if(!isOpen){
+         $('.shop-list').addClass('open');
+         isOpen = true;
+       }else{
+         $('.shop-list').removeClass('open');
+         isOpen = false;
+       }
+    })
+})()
