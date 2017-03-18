@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="textml; charset=UTF-8">
@@ -8,12 +9,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <title>首页--订单</title>
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/AllCss.css"/>
-    <link rel="stylesheet" href="../css/swiper.min.css"/>
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/swiper.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/AllCss.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+
 </head>
+
 <body class="index order-index">
     <!--首页订单nav-->
     <div class="dingdan-nav flex-father">
@@ -56,25 +57,34 @@
         <i class="icon icon-mei"></i>
         <p>暂时没有数据</p>
     </div>
-<!--底部-->
-<div class="db border-top">
-    <div><i class="icon icon-db1"></i><p>首页</p></div>
-    <div class="active"><i class="icon icon-db2 "></i><p>订单</p></div>
-    <div><i class="icon icon-db3"></i><p>我的</p></div>
-</div>
+    <!--底部-->
+    <div class="db border-top">
+        <div><i class="icon icon-db1"></i>
+            <p>首页</p>
+        </div>
+        <div class="active"><i class="icon icon-db2 "></i>
+            <p>订单</p>
+        </div>
+        <div><i class="icon icon-db3"></i>
+            <p>我的</p>
+        </div>
+    </div>
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+    <script src="../lib/swiper.jquery.min.js"></script>
 </body>
 <script>
-    $(".dingdan-zhuangtai").on("click",function(){
+    $(".dingdan-zhuangtai").on("click", function() {
         $(this).addClass("active");
         $(".dingdan-xiangqing").removeClass("active")
         $(".dingdan").show();
         $(".pingjia").hide();
     })
-    $(".dingdan-xiangqing").on("click",function(){
+    $(".dingdan-xiangqing").on("click", function() {
         $(this).addClass("active");
         $(".dingdan-zhuangtai").removeClass("active")
         $(".dingdan").hide();
         $(".pingjia").show();
     })
 </script>
+
 </html>
