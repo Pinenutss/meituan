@@ -1502,7 +1502,7 @@ div {
     border: 1px solid #e0e0e0;
     border-radius: 15px;
     text-align: center;
-    margin: 15px 5px 0 5px;
+    margin: 8px 5px;
 }
 
 .xq-leixing .flex-father input[type=checkbox]+label {
@@ -1512,7 +1512,7 @@ div {
     border: 1px solid #e0e0e0;
     border-radius: 15px;
     text-align: center;
-    margin: 15px 5px 0 5px;
+    margin: 8px 5px;
 }
 
 .xq-leixing .flex-father input[type=radio]:checked+label {
@@ -2717,12 +2717,12 @@ div {
     text-align: center;
 }
 
-.shop .xq-mask {
+/*.shop .xq-mask {
     padding: 10px 0 0;
     border-radius: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-}
+}*/
 
 .shop .xq-title {
     padding: 0 8px;
@@ -2749,7 +2749,37 @@ div {
     margin-right: 15px;
     margin-top: 5px;
 }
+.xq-mask.shop-s{
+  padding-bottom: 1.25rem !important;
+}
+.shop .ok{
+   height: 1.25rem;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: #eee;
+   font-size: 0px;
+   border-radius: 0 0px 6px 6px;
+}
 
+.shop .ok a{
+   height: .6rem;
+   line-height: .6rem;
+   padding: 0 .4rem;
+   position: absolute;
+   top: 50%;
+   right: .2rem;
+   transform: translateY(-50%);
+   -webkit-transform:translateY(-50%);
+   border-radius: .6rem;
+   background-color: #ff8e28;
+   font-size: 14px;
+   color: #fff;
+}
+.shop .ok a:active{
+  background-color: #f6a55b;
+}
 .shop .gouwuche .icon-gouwuche {
     background-image: url("../images/gouwuche@2x.png");
     width: 18px;

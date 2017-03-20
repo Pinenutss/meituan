@@ -11,6 +11,7 @@
     <title>店铺详情</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/weui.css" />
     <link rel="stylesheet" href="../css/AllCss.css" />
 
 
@@ -295,34 +296,38 @@
         </div>
     </div>
     <!--订单-->
-    <div class="shop-mask" style="display: none">
+    <div class="xiangqing-mask" style="display:none">
         <div class="weui-mask"></div>
-        <div class="xq-mask">
+        <div class="xq-mask shop-s">
             <div class="xq-title">规格详情<i class="icon icon-cha"></i></div>
             <div class="xq-leixing">
                 <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
-                <p class="flex-father">
-                    <span class="active">材料1</span>
-                    <span>材料2</span>
-                    <span>材料3</span>
-                    <span>材料4</span>
-                    <span>材料5</span>
-                    <span>材料6</span>
-                </p>
+                <div class="flex-father">
+                    <div><input type="radio" name="test" id="food_type_1" value="A区"><label for="food_type_1">番茄炒蛋</label></div>
+                    <div><input type="radio" name="test" id="food_type_2" value="A区"><label for="food_type_2">蛋炒饭</label></div>
+                    <div><input type="radio" name="test" id="food_type_3" value="A区"><label for="food_type_3">清汤豆腐</label></div>
+                    <div><input type="radio" name="test" id="food_type_4" value="A区"><label for="food_type_4">糖醋排骨</label></div>
+                    <div><input type="radio" name="test" id="food_type_5" value="A区"><label for="food_type_5">A区</label></div>
+                    <div><input type="radio" name="test" id="food_type_6" value="A区"><label for="food_type_6">A区</label></div>
+                    <div><input type="radio" name="test" id="food_type_7" value="A区"><label for="food_type_7">A区</label></div>
+                    <div><input type="radio" name="test" id="food_type_8" value="A区"><label for="food_type_8">A区</label></div>
+                </div>
             </div>
             <div class="xq-leixing">
-                <p class="xq-choose">请选择汤底 <span>(单选)</span>：</p>
-                <p class="flex-father">
-                    <span class="active">材料1</span>
-                    <span>材料2</span>
-                    <span>材料3</span>
-                    <span>材料4</span>
-                    <span>材料5</span>
-                    <span>材料6</span>
-                </p>
+                <p class="xq-choose">请选择汤底 <span>(多选)</span>：</p>
+                <div class="flex-father">
+                    <div><input type="checkbox" id="food2_type_1" value="A区"><label for="food2_type_1">A区11111</label></div>
+                    <div><input type="checkbox" id="food2_type_2" value="A区"><label for="food2_type_2">A区222</label></div>
+                    <div><input type="checkbox" id="food2_type_3" value="A区"><label for="food2_type_3">A区</label></div>
+                    <div><input type="checkbox" id="food2_type_4" value="A区"><label for="food2_type_4">A区4444</label></div>
+                    <div><input type="checkbox" id="food2_type_5" value="A区"><label for="food2_type_5">A区</label></div>
+                    <div><input type="checkbox" id="food2_type_6" value="A区"><label for="food2_type_6">A区333</label></div>
+                    <div><input type="checkbox" id="food2_type_7" value="A区"><label for="food2_type_7">A区</label></div>
+                    <div><input type="checkbox" id="food2_type_8" value="A区"><label for="food2_type_8">A区</label></div>
+                </div>
             </div>
-            <div class="gouwuche">
-                <span class="gouwuche-sp"><i class="icon icon-gouwuche"></i>加入购物车</span>
+            <div class="ok">
+              <a href="javascript:;">确定</a>
             </div>
         </div>
     </div>
@@ -425,6 +430,7 @@
 </script> -->
 <script src="../lib/jquery-2.1.4.min.js"></script>
 <script src="../lib/swiper.jquery.min.js"></script>
+<script src="../lib/weui.min.js"></script>
 <script src="../lib/bscroll.js"></script>
 <script src="../js/shop.js"></script>
 
