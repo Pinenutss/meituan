@@ -21,9 +21,11 @@ div {
     visibility: hidden;
     clear: both;
 }
-.order-gl .weui-dialog__btn{
-  font-size: 14px !important;
+
+.order-gl .weui-dialog__btn {
+    font-size: 14px !important;
 }
+
 .weui-dialog__title {
     font-size: 1.8rem!important;
 }
@@ -466,9 +468,6 @@ div {
 
 .index .db .icon-db1.active {
     background-image: url("../images/index162@2x.png");
-    width: 23px;
-    height: 23px;
-    background-size: 23px 23px;
 }
 
 .index .db .icon-db2 {
@@ -478,18 +477,8 @@ div {
     background-size: 23px 23px;
 }
 
-.index .db .active .icon-db2 {
+.index .db .icon-db2.active {
     background-image: url("../images/index142@2x.png");
-    width: 23px;
-    height: 23px;
-    background-size: 23px 23px;
-}
-
-.index .db .active .icon-db3 {
-    background-image: url("../images/index152@2x.png");
-    width: 23px;
-    height: 23px;
-    background-size: 23px 23px;
 }
 
 .index .db .icon-db3 {
@@ -497,6 +486,10 @@ div {
     width: 23px;
     height: 23px;
     background-size: 23px 23px;
+}
+
+.index .db .icon-db3.active {
+    background-image: url("../images/index152@2x.png");
 }
 
 .index .index-mask {
@@ -2500,7 +2493,7 @@ div {
 .foode-type-wrap h4 {
     font-size: 14px;
     font-weight: normal;
-    padding:.2rem;
+    padding: .2rem;
 }
 
 .shop .shop-1 {
@@ -2717,6 +2710,7 @@ div {
     text-align: center;
 }
 
+
 /*.shop .xq-mask {
     padding: 10px 0 0;
     border-radius: 0;
@@ -2749,37 +2743,41 @@ div {
     margin-right: 15px;
     margin-top: 5px;
 }
-.xq-mask.shop-s{
-  padding-bottom: 1.25rem !important;
-}
-.shop .ok{
-   height: 1.25rem;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   background-color: #eee;
-   font-size: 0px;
-   border-radius: 0 0px 6px 6px;
+
+.xq-mask.shop-s {
+    padding-bottom: 1.25rem !important;
 }
 
-.shop .ok a{
-   height: .6rem;
-   line-height: .6rem;
-   padding: 0 .4rem;
-   position: absolute;
-   top: 50%;
-   right: .2rem;
-   transform: translateY(-50%);
-   -webkit-transform:translateY(-50%);
-   border-radius: .6rem;
-   background-color: #ff8e28;
-   font-size: 14px;
-   color: #fff;
+.shop .ok {
+    height: 1.25rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+    font-size: 0px;
+    border-radius: 0 0px 6px 6px;
 }
-.shop .ok a:active{
-  background-color: #f6a55b;
+
+.shop .ok a {
+    height: .6rem;
+    line-height: .6rem;
+    padding: 0 .4rem;
+    position: absolute;
+    top: 50%;
+    right: .2rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    border-radius: .6rem;
+    background-color: #ff8e28;
+    font-size: 14px;
+    color: #fff;
 }
+
+.shop .ok a:active {
+    background-color: #f6a55b;
+}
+
 .shop .gouwuche .icon-gouwuche {
     background-image: url("../images/gouwuche@2x.png");
     width: 18px;
@@ -2793,11 +2791,11 @@ div {
     width: 100%;
     font-size: 14px;
     padding-bottom: .25rem;
-    background:#fff;
+    background: #fff;
     transition: all 150ms linear;
     -webkit-transition: all 150ms linear;
-    transform:translateY(100%);
-    -webkit-transform:translateY(100%);
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
     opacity: 1;
 }
 
@@ -2816,13 +2814,15 @@ div {
     height: 40px;
     width: 100%;
     line-height: 40px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.shop .gouwu-list-inner{
-  max-height:400px;
-  overflow:hidden;
-  overflow-y: scroll;
+
+.shop .gouwu-list-inner {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
+
 .shop .gouwuche-msg {
     height: 50px;
     line-height: 50px;
@@ -2833,27 +2833,29 @@ div {
 }
 
 .shop .gouwuche-msg .p3 {
-  position: absolute;
+    position: absolute;
     color: #222833;
     right: 34px;
     bottom: 0;
     font-size: 14px;
 }
 
-.shop .gouwuche-msg .icon-jian{
-   position: absolute;
-   top: 50%;
-   left: -15px;
-   transform: translateY(-50%);
-   -webkit-transform: translateY(-50%);
+.shop .gouwuche-msg .icon-jian {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
-.shop .gouwuche-msg .icon-jia{
-   position: absolute;
-   top: 50%;
-   right: -15px;
-   transform: translateY(-50%);
-   -webkit-transform: translateY(-50%);
+
+.shop .gouwuche-msg .icon-jia {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
+
 .shop .gouwuche-msg .p-num {
     display: inline-block;
     padding: 0 10px;
@@ -2867,21 +2869,26 @@ div {
     flex: 1;
 }
 
-.shop-list{
-  visibility:hidden;
-  opacity: 0;
-  transition: all 150ms linear;
-  -webkit-transition: all 150ms linear;
+.shop-list {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
 }
-.shop-list.open{
-  visibility: visible;;
-  opacity: 1;
+
+.shop-list.open {
+    visibility: visible;
+    ;
+    opacity: 1;
 }
-.shop-list.open .gouwu-list{
-  transform:translateY(0);
-  -webkit-transform:translateY(0);
-  opacity: 1;
+
+.shop-list.open .gouwu-list {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
 }
+
+
 /*星星*/
 
 .glyphicon {
